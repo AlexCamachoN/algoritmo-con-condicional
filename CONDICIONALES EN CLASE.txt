@@ -1,0 +1,76 @@
+//condicionales
+let numero = parseInt(prompt("Ingrese un numero"));
+
+if (numero == 7) {
+    console.log("Acertaste");
+} else {
+    console.log("Perdiste");
+}
+
+//juego futbol
+let puntos = 0;
+//pregunta 1
+let edadMessi = parseInt(prompt("Qué edad tiene Leo Messi???"));
+
+if (edadMessi == 34) {
+    console.log("Excelente suma 1 punto");
+    puntos = puntos + 1; //puntos=0+1
+} else if (edadMessi < 34) {
+    console.log("Te faltaron unos añitos, Messi tiene 34 años");
+    puntos = puntos - 1; //puntos=0-1
+} else {
+    console.log("Te pasaste, Messi no es tan viejo, tiene 34 años");
+    puntos = puntos - 1;
+}
+//pregunta 2
+let mundialesBrasil = parseInt(prompt("Cuantos mundiales ganó Brasil???"));
+
+if (mundialesBrasil == 5) {
+    console.log("Excelente suma 1 punto");
+    puntos = puntos + 1; //puntos=0+1
+} else if (mundialesBrasil < 5) {
+    console.log("te faltó, Brasil gano 5 mundiales");
+    puntos = puntos - 1; //puntos=0-1
+} else {
+    console.log("Te pasaste, Brasil gano 5 mundiales solamente");
+    puntos = puntos - 1;
+}
+
+//al final
+console.log("Puntaje total: " + puntos);
+
+//variables booleanas
+let edadUsuario = parseInt(prompt("Ingrese su edad")); //3
+let esMayorDeEdad = (edadUsuario > 17); //(3>17)false -> esMayorDeEdad=false
+console.log("El usuario es mayor de edad: " + esMayorDeEdad);
+if (esMayorDeEdad) {
+    alert("Usted es mayor de edad");
+} else {
+    alert("Usted es menor de edad");
+}
+
+//operadores
+let num1 = 1;
+let numUno = "1";
+let sonIguales = (num1 == numUno);
+console.log("Los numeros son iguales: " + sonIguales);
+let sonEstrictamenteIguales = (num1 === numUno);
+console.log("Los numero son estrictamente iguales en tipo y valor: " + sonEstrictamenteIguales);
+
+//or
+let colorFavorito = prompt("Cual es mi color favorito?");
+if ((colorFavorito == "azul") || (colorFavorito == "AZUL") || (colorFavorito == "Azul")) {
+    console.log("Acertaste");
+} else {
+    console.log("Perdiste, mi color es el azul");
+}
+
+//diapo27 and
+let nombreIngresado = prompt("Ingresar nombre");
+let apellidoIngresado = prompt("Ingresar apellido");
+
+if ((nombreIngresado != "") && (apellidoIngresado != "")) {
+    alert("Nombre: " + nombreIngresado + "\nApellido: " + apellidoIngresado);
+} else {
+    alert("Error: Ingresar nombre y apellido");
+}
